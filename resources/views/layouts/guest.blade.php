@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'todolist')</title>
     <link rel="stylesheet" href="{{ assert('css/app.css') }}">
+    @vite(['resources/js/app.js'])
 </head>
 <body>
-
+    @yield('content')
 </body>
 </html>
