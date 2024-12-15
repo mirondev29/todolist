@@ -20,21 +20,12 @@
                         @csrf
                         <div class="mb-3">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required>
-                            @error('name')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mb-3">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Введите email" required>
-                            @error('email')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль" required>
-                            @error('password')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Подтвердите пароль" required>
